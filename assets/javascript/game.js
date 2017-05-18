@@ -7,6 +7,7 @@
 	var lettersGuessed = [];
 
 
+	
 
 	//need user to make a choice
 
@@ -36,21 +37,23 @@
 				guessesLeft=10;
 			}
 
+			lettersGuessed.push(userGuess);
+		
+
 		//display the results to user
 		var html =  "<h1>The Psychic Game</h1>" +
 		"<p>Guess what letter I am thinking of...</p>" + 
 		"<p>your guess: " + userGuess + "</p>" +
 		"<p>wins:" + wins + "</p>" +
 		"<p>losses:" + losses + "</p>" +
-		"<p>guesses left: " + guessesLeft + "</p>";
-		"<p2>guesses left: " + guessesLeft + "</p2>";
-		
+		"<p>guesses left: " + guessesLeft + "</p>" +
+		"<p>guesses so far: " + lettersGuessed + "</p>";
 
+				
 		document.querySelector('#game').innerHTML = html;
 
+		
 	}
 
 	}  
-// //
-// 	document.getElementById("#guessed").innerHTML = [0];
-// 	lettersGuessed.push
+	
